@@ -1,21 +1,21 @@
 .wrapper {
-  background: #f9f9f9;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
   width: 100%;
   max-width: 1512px;
+  padding: 10rem 2rem;
   margin: 0 auto;
+  position: relative;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 5rem;
 }
 
 .presentation {
   h5 {
-    margin-top: 10.6rem;
-    color: #000000;
+    color: var(--black);
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 3.6rem;
@@ -29,42 +29,38 @@
       position: absolute;
       height: 0.4rem;
       width: 11rem;
-      background: #3333cc;
+      background: var(--primary-color);
     }
   }
 
   h1 {
     font-weight: 900;
     font-size: 6.3rem;
-    color: #212121;
+    color: var(--text-primary);
     line-height: 7.1rem;
 
     span {
       display: block;
       font-weight: 700;
       font-size: 6.3rem;
-      color: #212121;
+      color: var(--text-primary);
       line-height: 7.1rem;
     }
   }
 
   p {
     margin-top: 4.5rem;
-    width: 38rem;
     font-size: 1.7rem;
     line-height: 2.8rem;
-    color: #212121;
+    color: var(--text-primary);
   }
 }
 
 .employees {
-  padding-left: 7.7rem;
-  padding-top: 19.5rem;
-  padding-bottom: 10rem;
-
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 8rem 3rem;
+  padding-top: 6rem;
 }
 
 .employeeItem {
@@ -72,9 +68,7 @@
   background: rgba(249, 249, 249, 0.9);
   box-shadow: 0px 2.76628px 11.7567px rgba(0, 0, 0, 0.25);
   border-radius: 6.5rem;
-  width: 29rem;
-  height: 31.1rem;
-  padding: 0 3.5rem;
+  padding: 0 3rem 6rem 3rem;
 
   display: flex;
   flex-direction: column;
@@ -107,7 +101,7 @@
   p {
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #000;
+    color: var(--black);
     margin-top: 1.2rem;
   }
 
@@ -116,12 +110,12 @@
     right: 4rem;
     bottom: 2rem;
     font-size: 2rem;
-    color: #000000;
+    color: var(--black);
     text-decoration: none;
     font-weight: 700;
     height: 3.5rem;
     width: 3.5rem;
-    border: 1px solid #3333cc;
+    border: 1px solid var(--primary-color);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -133,10 +127,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8.5rem;
+  margin-bottom: 8rem;
 
   button {
-    background: #3333cc;
+    background: var(--primary-color);
     height: 7.4rem;
     width: 37.1rem;
     font-size: 2.4rem;
@@ -147,5 +141,17 @@
     border-radius: 5rem;
     border: 0;
     outline: 0;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--hover-color);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
   }
 }

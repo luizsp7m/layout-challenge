@@ -6,19 +6,19 @@ export function Welcome() {
       <div className={styles.container}>
         <div className={styles.presentation}>
           <img src="/assets/logo.svg" alt="Logo" />
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h1>Agência especializada em SEO & Apaixonada por Vendas</h1>
+          <p>Agência especializada em SEO, apaixonada por ajudar empresas a venderem mais no Google através de metodologia comprovada, pessoas criativas e foco em resultados.</p>
 
-          <div className={styles.footer}>
-            <h5>Lorem ipsum <b>#dolor</b></h5>
+          <div className={styles.achievements}>
+            <h5>Direto de quem <b>#confia</b></h5>
 
-            <div className={styles.list}>
-              {Array.from(Array(4)).map(index => (
-                <div key={index} className={styles.item}>
-                  <img src="/assets/logo-circle.svg" alt="Logo" />
+            <div className={styles.companies}>
+              {Array.from(Array(4)).map((item, index) => (
+                <div key={index} className={styles.company}>
+                  <img src="/assets/your-logo.svg" alt="Logo" />
 
                   <div>
-                    <h5>Lorem ipsum dolor</h5>
+                    <h5>Lorem Ipsum</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                   </div>
                 </div>
@@ -29,16 +29,16 @@ export function Welcome() {
 
         <div className={styles.form}>
           <img src="/assets/woman.svg" alt="Woman" />
-          
-          <form action="">
-            <h1>Lorem ipsum dolor sit amet?</h1>
+
+          <form onSubmit={() => { }}>
+            <h1>Quer aumentar seu tráfego?</h1>
 
             <input type="text" placeholder="Nome" />
             <input type="text" placeholder="Site" />
             <input type="text" placeholder="E-mail" />
             <input type="text" placeholder="Telefone" />
 
-            <button type="submit">Enviar</button>
+            <button type="submit">Falar com Especialista</button>
           </form>
         </div>
       </div>

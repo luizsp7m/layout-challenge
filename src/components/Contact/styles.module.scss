@@ -1,11 +1,12 @@
 .wrapper {
-  background: #3039c3;
+  background: var(--primary-color);
 }
 
 .container {
   width: 100%;
   max-width: 1512px;
   margin: 0 auto;
+  padding: 0 2rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,12 +18,12 @@
     font-weight: 700;
     font-size: 5.7rem;
     line-height: 6.6rem;
-    color: #F9F9F9;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
   }
 
   h1 {
-    color: #50D9D4;
+    color: var(--secondary-color);
     font-weight: 900;
     font-size: 8.2rem;
     line-height: 6.6rem;
@@ -33,7 +34,7 @@
     font-weight: 500;
     font-size: 2.3rem;
     line-height: 3.6rem;
-    color: #F9F9F9;
+    color: var(--text-secondary);
     max-width: 49.8rem;
   }
 
@@ -46,32 +47,38 @@
 
     input {
       height: 5.4rem;
-      background: #FFFFFF;
+      background: var(--white);
       border-radius: 2.6rem;
       border: 0;
       outline: 0;
       padding: 0 2.8rem;
-      color: #989898;
+      color: var(--gray);
 
       &::placeholder {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 1.9rem;
-        color: #989898;
+        color: var(--gray);
       }
     }
 
     button {
       margin-top: 1.6rem;
       height: 6.9rem;
-      background: #50D9D4;
+      background: var(--secondary-color);
       outline: none;
       border: none;
-      color: #FFFFFF;
+      color: var(--white);
       font-weight: 900;
       font-size: 3.6rem;
       border-radius: 3.4rem;
       box-shadow: 0px 5.11111px 6.38889px rgba(0, 0, 0, 0.25);
       margin-bottom: 12.9rem;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        background: var(--hover-color);
+      }
     }
   }
 }
@@ -81,8 +88,31 @@
 
   img {
     position: absolute;
-    width: 80rem;
+    width: 100%;
+    max-width: 80rem;
     height: 110%;
     top: -8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    width: 100%;
+
+    > p {
+      max-width: 100%;
+    }
+
+    > form {
+      max-width: 100%;
+    }
+  }
+
+  .image {
+    display: none;
   }
 }

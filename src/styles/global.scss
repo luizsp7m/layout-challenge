@@ -8,15 +8,38 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --text-primary: #212121;
+  --text-secondary: #f9f9f9;
+
+  --primary-color: #3039c3;
+  --secondary-color: #50d9d4;
+
+  --white: #fff;
+  --black: #000;
+  --gray: #989898;
+
+  --hover-color: #ff8412;
+}
+
 body {
   font-size: 62.5%;
-}
-
-body, input, button {
   font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
 }
 
-@media(max-width: 475px) {
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 475px) {
   html {
     font-size: 50%;
   }

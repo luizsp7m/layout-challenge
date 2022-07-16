@@ -24,7 +24,7 @@ export function CustomerItem({ isOdd }: CustomerItemProps) {
   return (
     <div className={styles.customerItem} style={{ background: isOdd ? "#FFF" : "#F9F9F9" }}>
       <div className={styles.customerInformation}>
-        <img src="/assets/logo-circle.svg" alt="Logo" />
+        <img src="/assets/your-logo.svg" alt="Logo" />
 
         <div>
           <h5>Lorem ipsum dolor</h5>

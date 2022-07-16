@@ -1,26 +1,241 @@
 .wrapper {
-  background-image: url("/assets/people.jpg");
-  background-size: cover;
+  background-image: url("/assets/netlinks.jpg");
   background-position: center;
-}
+  background-size: cover;
+  position: relative;
+  padding: 13rem 0 5rem 0;
 
-.container {
-  width: 1017px;
-  margin: 0 auto;
-}
-
-.presentation {
-  padding-top: 6.3rem;
-  background: rgba(249, 249, 249, 0.9);
-
-  p {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 3.3rem;
-    color: #212121;
-    width: 80.5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(142, 68, 173, 0.1);
   }
 }
 
-.gradient {
+.container {
+  width: 100%;
+  max-width: 1512px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: -2.5rem;
+  left: -12.5rem;
+  z-index: 10;
+
+  > h5 {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      width: 10rem;
+      height: 0.4rem;
+      background: var(--black);
+    }
+  }
+
+  > h1 {
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-top: 3rem;
+
+    > span {
+      font-weight: 700;
+      font-size: 6rem;
+      line-height: 7rem;
+    }
+  }
+}
+
+.presentation {
+  background: rgba(249, 249, 249, 0.9);
+  padding: 6rem 10rem 25rem 10rem;
+  border-radius: 10rem;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+
+  > p {
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.3rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(197px, 1fr));
+  padding: 0 5rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin-top: 2.2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 25rem;
+  border-radius: 5rem;
+  padding: 0 1rem;
+
+  > h1 {
+    font-weight: 900;
+    font-size: 5.5rem;
+    color: var(--text-primary);
+  }
+
+  > h5 {
+    color: var(--text-primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  > span {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}
+
+.card.selected {
+  background: #ffffff;
+  box-shadow: 0px 3.47395px 17.3698px rgba(0, 0, 0, 0.25);
+
+  > h1,
+  h5 {
+    color: var(--primary-color);
+  }
+}
+
+.footer {
+  margin-top: 8rem;
+
+  > h5 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    position: relative;
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  gap: 8.2rem;
+  margin-top: 5rem;
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+
+  > div {
+    &:first-child {
+      height: 11.3rem;
+      width: 11.3rem;
+      background: linear-gradient(100.25deg, #3333cc 15.14%, #6b6bf8 87.47%);
+      border-radius: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > img {
+        width: 5rem;
+        height: 7rem;
+      }
+    }
+
+    &:last-child {
+      > h5 {
+        color: var(--text-primary);
+        font-weight: 700;
+        font-size: 2.6rem;
+      }
+
+      > p {
+        color: var(--text-primary);
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1788px) {
+  .title {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 3rem;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1024px) {
+  .presentation {
+    padding: 6rem 10rem;
+    border-radius: 8rem;
+    padding: 6rem;
+  }
+
+  .information {
+    position: relative;
+    padding: 0;
+  }
+
+  .location {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .presentation {
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+  }
+
+  .information {
+    grid-template-columns: 1fr;
+  }
+
+  .address {
+    flex-direction: column;
+
+    > div {
+      &:first-child {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 1rem;
+
+        > img {
+          width: 2rem;
+          height: auto;
+        }
+      }
+    }
+  }
 }
