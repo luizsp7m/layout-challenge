@@ -26,7 +26,7 @@ export function About() {
 
             <div className={styles.card}>
               <h1>5</h1>
-              <h5>anos de CNPJ</h5>
+              <h5>anos de <br /> CNPJ</h5>
             </div>
 
             <div className={styles.card}>
