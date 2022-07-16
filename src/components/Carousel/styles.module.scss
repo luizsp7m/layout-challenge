@@ -1,0 +1,63 @@
+.wrapper {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  transform: translateX(0);
+
+  > button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    z-index: 10;
+    background: none;
+
+    // &:hover {
+    //   background: var(--hover-color);
+    // }
+  }
+
+  > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.previousButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.selected {
+  animation: fadeIn ease-in-out 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

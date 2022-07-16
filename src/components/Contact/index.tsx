@@ -12,7 +12,7 @@ export function Contact() {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.image}>
-            <img src="/assets/man.svg" alt="Man" />
+            <img src="/assets/man-01.svg" alt="Man" />
           </div>
 
           <div className={styles.form}>

@@ -92,7 +92,11 @@
   z-index: 10;
 
   > img {
-    width: 100%;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    left: -4rem;
+    top: 7rem;
   }
 
   > form {

@@ -6,6 +6,7 @@ import { Employees } from "../../components/Employees";
 import { Customers } from "../../components/Customers";
 import { Contact } from "../../components/Contact";
 import { Timeline } from "../../components/Timeline";
+import { Carousel } from "../../components/Carousel";
 
 export function Home() {
   return (
@@ -13,6 +14,7 @@ export function Home() {
       <Welcome />
       <Timeline />
       <About />
+      <Carousel />
       <Employees />
       <Customers />
       <Contact />

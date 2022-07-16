@@ -1,19 +1,8 @@
 .wrapper {
-  background-image: url("/assets/netlinks.jpg");
+  background-image: url("/assets/netlinks-background.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
   padding: 13rem 0 5rem 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(142, 68, 173, 0.1);
-  }
 }
 
 .container {

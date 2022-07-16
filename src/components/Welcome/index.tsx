@@ -34,7 +34,7 @@ export function Welcome() {
         </div>
 
         <div className={styles.form}>
-          <img src="/assets/woman.svg" alt="Woman" />
+          <img src="/assets/woman-01.svg" alt="Woman" />
 
           <form onSubmit={onSubmitForm}>
             <h1>Quer aumentar seu tráfego?</h1>
