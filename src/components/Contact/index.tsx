@@ -1,6 +1,6 @@
-import { FormEvent, Fragment } from "react";
-
 import styles from "./styles.module.scss";
+
+import { FormEvent, Fragment } from "react";
 
 export function Contact() {
   function onSubmitForm(event: FormEvent) {
@@ -16,8 +16,8 @@ export function Contact() {
           </div>
 
           <div className={styles.form}>
-            <h5>Lorem ipsum</h5>
-            <h1>dolor sit amet?</h1>
+            <h5>Vamos</h5>
+            <h1>conversar?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum porta arcu vel vulputate. Morbi quis egestas dui. Integer nibh mauris, pulvinar eu tempus eget, facilisis et nunc.</p>
 
             <form onSubmit={onSubmitForm}>

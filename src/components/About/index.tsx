@@ -46,8 +46,12 @@ export function About() {
               </div>
 
               <div>
-                <h5>Lorem ipsum</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h5>Belo Horizonte</h5>
+                <p>
+                  Endereço: R. Juiz Achilles Velloso, 160 <br />
+                  Bairro Estoril, BH - CEP 30494-180 <br />
+                  Telefone: (31) 4042-5566
+                </p>
               </div>
             </div>
 
@@ -57,8 +61,12 @@ export function About() {
               </div>
 
               <div>
-                <h5>Lorem ipsum</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h5>São Paulo</h5>
+                <p>
+                  Endereço: Rua Flórida, 1738 Cj 121 <br />
+                  Bairro Brooklin, SP - CEP 04565-001 <br />
+                  Telefone: (11) 2500-2228
+                </p>
               </div>
             </div>
           </div>

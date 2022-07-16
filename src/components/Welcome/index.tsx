@@ -1,6 +1,12 @@
 import styles from "./styles.module.scss";
 
+import { FormEvent } from "react";
+
 export function Welcome() {
+  function onSubmitForm(event: FormEvent) {
+    event.preventDefault();
+  }
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -30,7 +36,7 @@ export function Welcome() {
         <div className={styles.form}>
           <img src="/assets/woman.svg" alt="Woman" />
 
-          <form onSubmit={() => { }}>
+          <form onSubmit={onSubmitForm}>
             <h1>Quer aumentar seu tráfego?</h1>
 
             <input type="text" placeholder="Nome" />
