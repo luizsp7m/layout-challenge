@@ -1,0 +1,132 @@
+.banner {
+  background: #3039c3;
+  text-align: center;
+  padding: 8.7rem 0;
+
+  h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+
+    b {
+      color: #50d9d4;
+      font-weight: 900;
+      font-size: 6.9rem;
+    }
+  }
+}
+
+.customers {
+}
+
+.customerItem {
+}
+
+.customerInformation {
+  padding-top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+
+  img {
+    height: 16.2rem;
+    width: 16.2rem;
+    object-fit: contain;
+    border: 2px solid #3039c3;
+    border-radius: 50%;
+  }
+
+  > div {
+    h5 {
+      color: #3039c3;
+      font-size: 3.1rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      max-width: 45rem;
+      color: #212121;
+    }
+  }
+}
+
+.customerEarnings {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  display: flex;
+  gap: 9.6rem;
+  padding-top: 7.8rem;
+  padding-left: 11.5rem;
+  padding-bottom: 6.5rem;
+}
+
+.rectangle {
+  background: #ffffffe5;
+  width: 548px;
+  height: 425px;
+  border-radius: 9.5rem;
+  padding-bottom: 12.4rem;
+}
+
+.customerEarningsBody {
+  p {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+
+    b {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+    }
+
+    &:first-child {
+      color: #757575;
+    }
+
+    &:last-child {
+      color: #07c1bb;
+      max-width: 60.8rem;
+      margin-top: 3rem;
+    }
+  }
+
+  > div {
+    h5 {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      color: #212121;
+      margin-top: 3.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      color: #3039c3;
+      font-weight: 900;
+      font-size: 5.7rem;
+      line-height: 5.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: #3039c3;
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
+
+    span {
+      display: block;
+      background-color: #50d9d4;
+      width: 15.8rem;
+      height: 0.3rem;
+      margin: 2.6rem 0;
+    }
+  }
+}

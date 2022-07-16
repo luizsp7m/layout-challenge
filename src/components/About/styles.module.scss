@@ -1,0 +1,26 @@
+.wrapper {
+  background-image: url("/assets/people.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 1017px;
+  margin: 0 auto;
+}
+
+.presentation {
+  padding-top: 6.3rem;
+  background: rgba(249, 249, 249, 0.9);
+
+  p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.3rem;
+    color: #212121;
+    width: 80.5rem;
+  }
+}
+
+.gradient {
+}

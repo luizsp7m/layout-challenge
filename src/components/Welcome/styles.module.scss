@@ -1,0 +1,149 @@
+.wrapper {
+  min-height: 100vh;
+  background: #3136ac;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.8rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  img {
+    width: 40rem;
+    height: 17rem;
+    object-fit: contain;
+  }
+
+  h1 {
+    color: #f9f9f9;
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    max-width: 46rem;
+  }
+
+  p {
+    color: #f9f9f9;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-top: 3.2rem;
+
+  h5 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #50d9d4;
+    text-align: center;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.2rem;
+
+  img {
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h5 {
+      color: #f9f9f9;
+      font-weight: 800;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      text-align: left;
+    }
+
+    p {
+      color: #f9f9f9;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      max-width: 17rem;
+    }
+  }
+}
+
+.form {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  form {
+    position: absolute;
+    top: 42.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    background: #ffffff;
+    padding: 3.6rem;
+    border-radius: 2.6rem;
+
+    h1 {
+      color: #3039c3;
+      font-weight: 700;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    input {
+      height: 5.4rem;
+      border-radius: 1.6rem;
+      outline: none;
+      border: 1px solid #3039c3;
+      padding: 0 1.6rem;
+      font-size: 1.4rem;
+
+      &::placeholder {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      height: 5.4rem;
+      border-radius: 1.6rem;
+      border: none;
+      outline: none;
+      padding: 0 1.6rem;
+      font-size: 2.2rem;
+      background: #ff8412;
+      color: #ffffff;
+      font-weight: 900;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.wrapper {
+  background: #3039c3;
+}
+
+.container {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+  h5 {
+    margin-top: 10.6rem;
+    font-weight: 700;
+    font-size: 5.7rem;
+    line-height: 6.6rem;
+    color: #F9F9F9;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    color: #50D9D4;
+    font-weight: 900;
+    font-size: 8.2rem;
+    line-height: 6.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 2.3rem;
+    line-height: 3.6rem;
+    color: #F9F9F9;
+    max-width: 49.8rem;
+  }
+
+  form {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 50rem;
+
+    input {
+      height: 5.4rem;
+      background: #FFFFFF;
+      border-radius: 2.6rem;
+      border: 0;
+      outline: 0;
+      padding: 0 2.8rem;
+      color: #989898;
+
+      &::placeholder {
+        font-weight: 700;
+        font-size: 1.9rem;
+        color: #989898;
+      }
+    }
+
+    button {
+      margin-top: 1.6rem;
+      height: 6.9rem;
+      background: #50D9D4;
+      outline: none;
+      border: none;
+      color: #FFFFFF;
+      font-weight: 900;
+      font-size: 3.6rem;
+      border-radius: 3.4rem;
+      box-shadow: 0px 5.11111px 6.38889px rgba(0, 0, 0, 0.25);
+      margin-bottom: 12.9rem;
+    }
+  }
+}
+
+.image {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 80rem;
+    height: 110%;
+    top: -8rem;
+  }
+}
